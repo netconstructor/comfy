@@ -9,6 +9,7 @@
 		"type": "git",
 		"url": "http://github.com/DamonOehlman/comfy.git"
 	},
+	"engines": { "node": "0.4.x || 0.5.x" },
 	"dependencies": {
 	    "request": "2.x.x"
 	},
