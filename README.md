@@ -24,10 +24,10 @@ Once you have a connection, you can do pretty much anything you would do with co
 
 With Couch being very RESTful, using the above methods will generally yield the following results:
 
-- `get`: _GET_ a document or database's details
-- `put`: _PUT_ a database or document into couch
-- `post`: _POST_ data to a couch service
-- `del`: _DELETE_ a document or database
+- `get`: GET a document or database's details
+- `put`: PUT a database or document into couch
+- `post`: POST data to a couch service
+- `del`: DELETE a document or database
 
 For instance, while the general format for the above methods is a two parameter function call in the format of `function(opts, callback)` the opts parameter can be omitted for database level calls or replaced with a `string` type and comfy will try and accommodate.
 
@@ -71,6 +71,27 @@ couch.put(function(error, res) {
 ```
 
 ## Document Level Operations
+
+### Create a New Document
+
+If you wish to create a new document and have Couch assign the document an id for you, then you would do something like the following (assuming you have set a default database in the initialization step):
+
+```js
+couch.put({ title: 'Test Document' }, function(error, res) {
+	if (! error) {
+		console.log('new doc created, id = ' + res._id);
+	}
+});
+```
+
+If, however, you wish to specify the id for the new document, then would supply that as part of the document details:
+
+```js
+couch.put({
+	_id: 'test', 
+	title: 'Test Document' 
+});
+```
 
 ## Contributing
 
