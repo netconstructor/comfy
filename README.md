@@ -53,6 +53,16 @@ couch.get(function(error, res) {
 });
 ```
 
+#### Create a New Database
+
+```js
+couch.put(function(error, res) {
+	if (! error) {
+		console.log('Created database');
+	}
+});
+```
+
 ## Contributing
 
 ## License
