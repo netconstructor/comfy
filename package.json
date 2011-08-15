@@ -13,6 +13,9 @@
 	"dependencies": {
 	    "request": "2.x.x"
 	},
+	"devDependencies": {
+	    "async": "0.1.x"
+	},
 	"bugs": {
 		"web": "http://github.com/DamonOehlman/comfy/issues"
 	},
