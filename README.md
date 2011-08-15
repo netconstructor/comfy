@@ -2,7 +2,7 @@
 
 Comfy is a lightweight Node.js interface for [CouchDB](http://couchdb.apache.org/) that utilizes [Mikael Rogers'](https://github.com/mikeal) excellent [request](https://github.com/mikeal/request) library. 
 
-The reason Comfy came into existence, is simply that Mikael's library does such a good job of HTTP request handling for Node, that is just doesn't make sense to use the raw HTTP client...
+The reason Comfy came into existence, is simply that Mikael's library does such a good job of HTTP request handling for Node, that is just doesn't make sense to use the raw HTTP client.  While I had some great success using [PJsonCouch](https://github.com/landeiro/PJsonCouch) I started to discover instances where the raw HTTP client of this library struggled to deal with all of couch's RESTful-ness (such as 301 redirects).
 
 ## Usage
 
