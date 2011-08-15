@@ -9,7 +9,7 @@ function deleteExistingDB(callback) {
     couch.exists(function(exists) {
         if (exists) {
             console.log('DB exists, deleting');
-            couch.del(callback);
+            couch.del({ db: 'comfy_test' }, callback);
         }
         else {
             callback();
@@ -22,7 +22,11 @@ function createDB(callback) {
 } // createDB
 
 module.exports = function(callback) {
-    deleteExistingDB(function() {
+    deleteExistingDB(function(error, res) {
+        if (error) {
+            console.log(error);
+        } // if
+        
         createDB(function(error, res) {
             if (error) {
                 console.log('Error connecting to CouchDB, aborting tests');
