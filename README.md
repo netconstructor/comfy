@@ -16,6 +16,7 @@ var couch = require('comfy').init({
 	db: 'test', // set this parameter to specify a default database to use
 	debug: true // default value is false, set to true for some console.logging
 });
+```
 
 Once you have a connection, you can do pretty much anything you would do with couch directly.  The general principle in comfy is that we have mapped the underlying request helpers of `get`, `put`, `post`, `del` and `head` to their request counterparts and wrapped the handling to be as fault tolerant as possible.
 
