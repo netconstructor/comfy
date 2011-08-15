@@ -18,6 +18,8 @@ var couch = require('comfy').init({
 });
 ```
 
+### Requesty Goodness
+
 Once you have a connection, you can do pretty much anything you would do with couch directly.  The general principle in comfy is that we have mapped the underlying request helpers of `get`, `put`, `post`, `del` and `head` to their request counterparts and wrapped the handling to be as fault tolerant as possible.
 
 For instance, while the general format for the above methods is a two parameter function call in the format of `function(opts, callback)` the opts parameter can be omitted for database level calls or replaced with a `string` type and comfy will try and accommodate.
@@ -27,6 +29,8 @@ The supplied callback will be triggered with two arguments, firstly an `error` i
 The format of the callbacks is designed to be [async package](https://github.com/caolan/async) friendly.
 
 ### Database Operations
+
+#### Get Database Details
 
 To get the details for an existing database, simply run something similar to the following:
 
@@ -50,3 +54,15 @@ couch.get(function(error, res) {
 ```
 
 ## Contributing
+
+## License
+
+The source code is made available under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
+
+Copyright (c) 2011 Damon Oehlman
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
