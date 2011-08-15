@@ -4,9 +4,7 @@ var comfy = require('../lib/comfy'),
 
 require('./setup')(function(couch) {
     
-    var targetDB = comfy.init({ db: 'replication_test' });
-    
-    targetDB.put(function() {
+    couch.put({ db: 'replication_test' }, function() {
         async.forEach(
             testTitles, 
             function(title, callback) {

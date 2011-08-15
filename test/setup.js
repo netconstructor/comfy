@@ -1,6 +1,6 @@
 var comfy = require('../lib/comfy'),
     couch = comfy.init({
-        debug: true,
+        // debug: true,
         db: 'comfy_test'
     });
     
