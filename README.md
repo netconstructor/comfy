@@ -24,10 +24,10 @@ Once you have a connection, you can do pretty much anything you would do with co
 
 With Couch being very RESTful, using the above methods will generally yield the following results:
 
-- GET: retrieve a document or database's details
-- PUT: update or create a document or database
-- POST: post data to a couch service
-- DEL: remove a document or database
+- `get`: _GET_ a document or database's details
+- `put`: _PUT_ a database or document into couch
+- `post`: _POST_ data to a couch service
+- `del`: _DELETE_ a document or database
 
 For instance, while the general format for the above methods is a two parameter function call in the format of `function(opts, callback)` the opts parameter can be omitted for database level calls or replaced with a `string` type and comfy will try and accommodate.
 
