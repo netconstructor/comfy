@@ -1,0 +1,22 @@
+{
+	"name": "comfy",
+	"description": "Lightweight CouchDB client",
+	"tags": ["database", "couchdb"],
+	"author": "Damon Oehlman <damon.oehlman@sidelab.com>",
+	"version": "0.1.0",
+	"main": "index",
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/DamonOehlman/comfy.git"
+	},
+	
+	"dependencies": {
+	    "request": "2.x"
+	},
+	
+	"bugs": {
+		"web": "http://github.com/DamonOehlman/comfy/issues"
+	},
+	"contributors": [
+	]
+}
