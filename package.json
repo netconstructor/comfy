@@ -9,11 +9,9 @@
 		"type": "git",
 		"url": "http://github.com/DamonOehlman/comfy.git"
 	},
-	
 	"dependencies": {
-	    "request": "2.x"
+	    "request": "2.x.x"
 	},
-	
 	"bugs": {
 		"web": "http://github.com/DamonOehlman/comfy/issues"
 	},
