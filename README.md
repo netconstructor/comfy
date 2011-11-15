@@ -4,6 +4,12 @@ Comfy is a lightweight Node.js interface for [CouchDB](http://couchdb.apache.org
 
 The reason Comfy came into existence, is simply that Mikael's library does such a good job of HTTP request handling for Node, that is just doesn't make sense to use the raw HTTP client.  While I had some great success using [PJsonCouch](https://github.com/landeiro/PJsonCouch) I started to discover instances where the raw HTTP client of this library struggled to deal with all of couch's RESTful-ness (such as 301 redirects).
 
+## Use Nano
+
+While comfy is a good little library, as with most things there are some really great libraries out there do either the same or a slightly better job.  After writing comfy, I discovered [Nano](https://github.com/dscape/nano), and while I haven't abandoned Comfy in favour of Nano completely, Nano does work really, really well.
+
+So for the moment, if you are looking for a Node.js couch library, I'd recommend using Nano.
+
 ## General Usage
 
 ### Initialization
